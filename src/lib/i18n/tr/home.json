@@ -1,0 +1,4 @@
+{
+	"title": "Hoş geldin",
+	"text": "Okumak için <a href=\"{{link}}\">kit.svelte.dev</a> buraya git."
+}

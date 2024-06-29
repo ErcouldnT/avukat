@@ -1,0 +1,5 @@
+{
+	"home": "Anasayfa",
+	"about": "Hakkında",
+	"notification": "Bildirim {{count:gt; 0:{{count}} yeni {{count; 1:message; default:messages}}!; default:no messages...}}"
+}
