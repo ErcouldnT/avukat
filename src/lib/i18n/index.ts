@@ -10,31 +10,14 @@ export const config = {
 		level: dev ? 'warn' : 'error'
 	},
 	translations: {
-		en: { lang },
-		tr: { lang }
+		tr: { lang },
+		en: { lang }
 	},
 	loaders: [
 		{
-			locale: 'en',
-			key: 'menu',
-			loader: async () => (await import('./en/menu.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'about',
-			routes: ['/about'],
-			loader: async () => (await import('./en/about.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'home',
-			routes: ['/'],
-			loader: async () => (await import('./en/home.json')).default
-		},
-		{
 			locale: 'tr',
-			key: 'menu',
-			loader: async () => (await import('./tr/menu.json')).default
+			key: 'menu'
+			// loader: async () => (await import('./tr/menu.json')).default
 		},
 		{
 			locale: 'tr',
@@ -47,6 +30,23 @@ export const config = {
 			key: 'home',
 			routes: ['/'],
 			loader: async () => (await import('./tr/home.json')).default
+		},
+		{
+			locale: 'en',
+			key: 'menu'
+			// loader: async () => (await import('./en/menu.json')).default
+		},
+		{
+			locale: 'en',
+			key: 'about',
+			routes: ['/about']
+			// loader: async () => (await import('./en/about.json')).default
+		},
+		{
+			locale: 'en',
+			key: 'home',
+			routes: ['/']
+			// loader: async () => (await import('./en/home.json')).default
 		}
 	]
 };
