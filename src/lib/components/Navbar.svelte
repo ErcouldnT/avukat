@@ -26,8 +26,8 @@
 	<a class="btn variant-filled" href="/danışmanlar">Danışmanlar</a>
 	<a class="btn variant-filled" href="/avukatlar">Avukatlar</a> -->
 	<a class="btn variant-filled" href="/uygulamalar">{$t('navbar.areas')}</a>
-	<a class="btn variant-filled" href="/lokasyonlar">{$t('navbar.points')}</a>
-	<a class="btn variant-filled" href="/kariyer">{$t('navbar.career')}</a>
+	<!-- <a class="btn variant-filled" href="/lokasyonlar">{$t('navbar.points')}</a> -->
+	<!-- <a class="btn variant-filled" href="/kariyer">{$t('navbar.career')}</a> -->
 	<a class="btn variant-filled" href="/iletişim">{$t('navbar.contact')}</a>
 </nav>
 
@@ -53,7 +53,6 @@
 					<span class="flex-auto">{$t('navbar.crew.lawyers')}</span>
 				</a>
 			</li>
-			<!-- ... -->
 		</ul>
 	</nav>
 	<div class="arrow bg-surface-100-800-token" />

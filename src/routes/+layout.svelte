@@ -31,9 +31,9 @@
 <SEO />
 
 <AppShell>
-	<div class="py-4 container mx-auto">
-		<Header />
-	</div>
+	<!-- <div class="py-4 container mx-auto"> -->
+	<Header />
+	<!-- </div> -->
 	<div class="sticky top-0 z-10 bg-surface-50-900-token">
 		<Navbar />
 	</div>
