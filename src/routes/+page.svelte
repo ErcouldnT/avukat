@@ -6,11 +6,12 @@
 <!-- <h1>{$t('home.title')}</h1> -->
 
 <main>
-	<div class="bg-red-600">
+	<div class="">
 		<Hero />
 	</div>
 
-	<div class="bg-cyan-600">
-		<p>Some text</p>
+	<div class="">
+		<p>{$t('home.text1')}</p>
+		<p>{$t('home.text2')}</p>
 	</div>
 </main>
