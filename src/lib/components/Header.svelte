@@ -16,7 +16,7 @@
 <AppBar padding="p-4">
 	<svelte:fragment slot="lead">
 		<a href="/">
-			<img class="h-[128px]" src={logo} alt={config.title} />
+			<img class="h-36" src={logo} alt={config.title} />
 		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
