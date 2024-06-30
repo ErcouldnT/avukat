@@ -1,16 +1,24 @@
 <script lang="ts">
 	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { t, locale, locales } from '$lib/i18n';
-	import { Mail, Phone } from 'lucide-svelte';
+	import { Check, Mail, Phone } from 'lucide-svelte';
 	import config from '$lib/config';
 	import logo from '$lib/assets/logo.jpg';
 
-	// @ts-ignore
-	const handleChange = ({ currentTarget }) => {
-		const { value } = currentTarget;
+	let color = $locale;
 
-		document.cookie = `lang=${value} ;`;
-	};
+	function section(c: string): void {
+		color = c;
+		locale.set(c);
+		document.cookie = `lang=${c} ;`;
+	}
+
+	// @ts-ignore
+	// const handleChange = ({ currentTarget }) => {
+	// 	const { value } = currentTarget;
+
+	// 	document.cookie = `lang=${value} ;`;
+	// };
 </script>
 
 <AppBar padding="p-4">
@@ -32,11 +40,27 @@
 					<p>{config.email}</p>
 				</div>
 			</div>
-			<select class="text-base-token rounded-full" bind:value={$locale} on:change={handleChange}>
+
+			<div>
+				{#each $locales as value}
+					<button
+						class="chip {color === value ? 'variant-filled' : 'variant-soft'}"
+						on:click={() => {
+							section(value);
+						}}
+						on:keypress
+					>
+						{#if color === value}<span><Check size={12} /></span>{/if}
+						<span>{$t(`lang.${value}`)}</span>
+					</button>
+				{/each}
+			</div>
+
+			<!-- <select class="text-base-token rounded-full" bind:value={$locale} on:change={handleChange}>
 				{#each $locales as value}
 					<option {value} selected={$locale === value}>{$t(`lang.${value}`)}</option>
 				{/each}
-			</select>
+			</select> -->
 		</div>
 	</svelte:fragment>
 </AppBar>

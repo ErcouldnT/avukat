@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ChevronLeft, ChevronRight } from 'lucide-svelte';
+	import hero from '$lib/assets/hero.jpg';
 
 	const imageUrls = [
 		'https://atlaslegal.com.tr/img/slider/01.jpg',
@@ -10,5 +11,6 @@
 </script>
 
 <main class="">
-	<img class="" src={imageUrls[0]} alt="Hero" loading="lazy" />
+	<!-- <img class="" src={imageUrls[0]} alt="Hero" loading="lazy" /> -->
+	<img class="min-w-full" src={hero} alt="Hero" loading="lazy" />
 </main>
