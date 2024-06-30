@@ -1,3 +1,7 @@
-<div>Footer</div>
+<main>
+	<p>Footer</p>
+</main>
 
-<div>Copyright</div>
+<main>
+	<p>Copyright</p>
+</main>
