@@ -1,13 +1,16 @@
 <script lang="ts">
-	import { seo } from '$lib/stores/seo';
 	import { onMount } from 'svelte';
+	import { seo } from '$lib/stores/seo';
+	import config from '$lib/config';
 
-	export let title: string;
-	export let description: string;
+	export let title: string = config.title;
+	export let subtitle: string = config.slogan;
+	export let description: string = config.description;
 
 	const loadSeo = () => {
 		seo.set({
 			title,
+			subtitle,
 			description
 		});
 	};
@@ -18,16 +21,16 @@
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{title + ' ' + subtitle}</title>
 	<meta name="description" content={description} />
 
-	<meta name="keywords" content="listd, youtube, channels, lists, app" />
+	<meta name="keywords" content={config.keywords.join(', ')} />
 
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:url" content="https://listd.tv" />
+	<meta property="og:url" content={config.url} />
 
-	<meta property="twitter:url" content="https://listd.tv" />
+	<meta property="twitter:url" content={config.url} />
 	<meta property="twitter:title" content={title} />
 	<meta property="twitter:description" content={description} />
 </svelte:head>

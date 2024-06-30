@@ -1,11 +1,11 @@
 <script lang="ts">
+	import '../app.postcss';
+	import { AppShell } from '@skeletonlabs/skeleton';
+
+	import SEO from '$lib/components/SEO.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Contact from '$lib/components/Contact.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -28,21 +28,15 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<svelte:head>
-	<title>Hukuk app</title>
-</svelte:head>
+<SEO />
 
-<!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<Header />
-	</svelte:fragment>
-	<!-- Page Route Content -->
-	<!-- <a href="/">{$t('menu.home')}</a>
-		<a href="/about">{$t('menu.about')}</a> -->
-	<Navbar />
+	<Header />
+	<div class="sticky top-0 z-10 bg-surface-50-900-token">
+		<Navbar />
+	</div>
 	<slot />
-	<!-- <Contact /> -->
-	<Footer />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>
