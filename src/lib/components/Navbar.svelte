@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { t } from '$lib/i18n';
 	import { popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
 	import { BriefcaseBusiness, ChevronDown, Handshake, Users } from 'lucide-svelte';
@@ -15,19 +16,19 @@
 	};
 </script>
 
-<nav class="p-5 flex gap-5">
-	<a class="btn variant-filled" href="/">Anasayfa</a>
-	<a class="btn variant-filled" href="/biz">Hakkımızda</a>
+<nav class="py-4 flex gap-5 justify-center items-center">
+	<a class="btn variant-filled" href="/">{$t('navbar.title')}</a>
+	<a class="btn variant-filled" href="/biz">{$t('navbar.about')}</a>
 	<button class="btn variant-filled" use:popup={popupFeatured}
-		>Ekibimiz<ChevronDown strokeWidth={1} /></button
+		>{$t('navbar.crew.title')}<ChevronDown strokeWidth={1} /></button
 	>
 	<!-- <a href="/ortaklar">Ortaklar</a>
 	<a class="btn variant-filled" href="/danışmanlar">Danışmanlar</a>
 	<a class="btn variant-filled" href="/avukatlar">Avukatlar</a> -->
-	<a class="btn variant-filled" href="/uygulamalar">Ana Uygulama Alanları</a>
-	<a class="btn variant-filled" href="/lokasyonlar">Hizmet Noktalarımız</a>
-	<a class="btn variant-filled" href="/kariyer">Kariyer</a>
-	<a class="btn variant-filled" href="/iletişim">Bize Ulaşın</a>
+	<a class="btn variant-filled" href="/uygulamalar">{$t('navbar.areas')}</a>
+	<a class="btn variant-filled" href="/lokasyonlar">{$t('navbar.points')}</a>
+	<a class="btn variant-filled" href="/kariyer">{$t('navbar.career')}</a>
+	<a class="btn variant-filled" href="/iletişim">{$t('navbar.contact')}</a>
 </nav>
 
 <div class="card p-4 w-72 shadow-xl" data-popup="popupFeatured">
@@ -37,19 +38,19 @@
 			<li>
 				<a href="/ortaklar">
 					<span class="badge bg-primary-500"><Handshake /></span>
-					<span class="flex-auto">Ortaklar</span>
+					<span class="flex-auto">{$t('navbar.crew.partners')}</span>
 				</a>
 			</li>
 			<li>
 				<a href="/danışmanlar">
 					<span class="badge bg-primary-500"><Users /></span>
-					<span class="flex-auto">Danışmanlar</span>
+					<span class="flex-auto">{$t('navbar.crew.consultants')}</span>
 				</a>
 			</li>
 			<li>
 				<a href="/avukatlar">
 					<span class="badge bg-primary-500"><BriefcaseBusiness /></span>
-					<span class="flex-auto">Avukatlar</span>
+					<span class="flex-auto">{$t('navbar.crew.lawyers')}</span>
 				</a>
 			</li>
 			<!-- ... -->

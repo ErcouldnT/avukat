@@ -4,4 +4,13 @@
 </script>
 
 <!-- <h1>{$t('home.title')}</h1> -->
-<Hero />
+
+<main>
+	<div class="bg-red-600">
+		<Hero />
+	</div>
+
+	<div class="bg-cyan-600">
+		<p>Some text</p>
+	</div>
+</main>

@@ -1,0 +1,14 @@
+{
+	"title": "Homepage",
+	"about": "About Us",
+	"crew": {
+		"title": "Our Team",
+		"partners": "Partners",
+		"consultants": "Consultants",
+		"lawyers": "Lawyers"
+	},
+	"areas": "Main Application Areas",
+	"points": "Service Points",
+	"career": "Career",
+	"contact": "Contact us"
+}

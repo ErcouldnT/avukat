@@ -2,5 +2,7 @@
 	import TitleBar from '$lib/components/TitleBar.svelte';
 </script>
 
-<TitleBar title="İletişim" />
-<slot />
+<main class="bg-purple-800">
+	<TitleBar title="İletişim" />
+	<slot />
+</main>

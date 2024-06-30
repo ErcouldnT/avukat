@@ -16,38 +16,38 @@ export const config = {
 	loaders: [
 		{
 			locale: 'tr',
-			key: 'menu'
-			// loader: async () => (await import('./tr/menu.json')).default
+			key: 'navbar',
+			loader: async () => (await import('./tr/navbar.json')).default
 		},
-		{
-			locale: 'tr',
-			key: 'about',
-			routes: ['/about'],
-			loader: async () => (await import('./tr/about.json')).default
-		},
-		{
-			locale: 'tr',
-			key: 'home',
-			routes: ['/'],
-			loader: async () => (await import('./tr/home.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'menu'
-			// loader: async () => (await import('./en/menu.json')).default
-		},
+		// {
+		// 	locale: 'tr',
+		// 	key: 'about',
+		// 	routes: ['/about'],
+		// 	loader: async () => (await import('./tr/about.json')).default
+		// },
+		// {
+		// 	locale: 'tr',
+		// 	key: 'home',
+		// 	routes: ['/'],
+		// 	loader: async () => (await import('./tr/home.json')).default
+		// },
 		{
 			locale: 'en',
-			key: 'about',
-			routes: ['/about']
-			// loader: async () => (await import('./en/about.json')).default
-		},
-		{
-			locale: 'en',
-			key: 'home',
-			routes: ['/']
-			// loader: async () => (await import('./en/home.json')).default
+			key: 'navbar',
+			loader: async () => (await import('./en/navbar.json')).default
 		}
+		// {
+		// 	locale: 'en',
+		// 	key: 'about',
+		// 	routes: ['/about'],
+		// 	loader: async () => (await import('./en/about.json')).default
+		// },
+		// {
+		// 	locale: 'en',
+		// 	key: 'home',
+		// 	routes: ['/'],
+		// 	loader: async () => (await import('./en/home.json')).default
+		// }
 	]
 };
 

@@ -1,1 +1,1 @@
-<div>Hero Images</div>
+<main class="">Hero Images</main>

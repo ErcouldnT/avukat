@@ -1,7 +1,4 @@
-<main>
+<main class="">
 	<p>Footer</p>
-</main>
-
-<main>
-	<p>Copyright</p>
+	<p>All Rights Reserved © Copyright Erkut</p>
 </main>

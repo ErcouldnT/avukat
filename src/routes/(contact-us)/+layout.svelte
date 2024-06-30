@@ -2,5 +2,8 @@
 	import Contact from '$lib/components/Contact.svelte';
 </script>
 
-<slot />
+<main class="bg-green-800">
+	<slot />
+</main>
+
 <Contact />

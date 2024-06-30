@@ -1,5 +1,5 @@
 {
-	"home": "Anasayfa",
+	"title": "Anasayfa",
 	"about": "Hakkımızda",
 	"crew": {
 		"title": "Ekibimiz",
@@ -7,8 +7,8 @@
 		"consultants": "Danışmanlar",
 		"lawyers": "Avukatlar"
 	},
-	"main fields of application": "Ana Uygulama Alanları",
-	"our service points": "Hizmet Noktalarımız",
+	"areas": "Ana Uygulama Alanları",
+	"points": "Hizmet Noktalarımız",
 	"career": "Kariyer",
-	"contact us": "Bize Ulaşın"
+	"contact": "Bize Ulaşın"
 }

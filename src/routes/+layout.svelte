@@ -40,11 +40,9 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<!-- <a href="/">{$t('menu.home')}</a>
-	<a href="/about">{$t('menu.about')}</a> -->
+		<a href="/about">{$t('menu.about')}</a> -->
 	<Navbar />
-
 	<slot />
-
 	<!-- <Contact /> -->
 	<Footer />
 </AppShell>
