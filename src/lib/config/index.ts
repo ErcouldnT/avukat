@@ -1,7 +1,10 @@
 export const config = {
+	url: '',
 	title: '',
 	slogan: '',
 	description: '',
 	keywords: [],
-	url: ''
+	tel: '',
+	fax: '',
+	email: ''
 };

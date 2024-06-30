@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-	<title>Hukuk Bürosu</title>
+	<title>Hukuk app</title>
 </svelte:head>
 
 <!-- App Shell -->
