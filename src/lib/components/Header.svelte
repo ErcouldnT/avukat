@@ -21,7 +21,7 @@
 	// };
 </script>
 
-<AppBar padding="p-4">
+<AppBar padding="p-4" slotTrail="hidden md:block">
 	<svelte:fragment slot="lead">
 		<a href="/">
 			<img class="h-28" src={logo} alt={config.title} />

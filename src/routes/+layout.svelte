@@ -1,7 +1,8 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, getDrawerStore } from '@skeletonlabs/skeleton';
 
+	import { t } from '$lib/i18n';
 	import SEO from '$lib/components/SEO.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
@@ -26,9 +27,38 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	import { initializeStores, Drawer } from '@skeletonlabs/skeleton';
+	import { X } from 'lucide-svelte';
+	import config from '$lib/config';
+	initializeStores();
+	const drawerStore = getDrawerStore();
+
+	const closeMenu = () => {
+		drawerStore.close();
+	};
 </script>
 
 <SEO />
+<Drawer>
+	<div class="p-4 flex justify-between items-center">
+		<h2>{config.title + ' ' + config.slogan}</h2>
+		<button on:click={closeMenu}><X /></button>
+	</div>
+	<hr />
+
+	<nav class="p-4 list-nav">
+		<ul>
+			<li><a on:click={closeMenu} href="/">{$t('navbar.title')}</a></li>
+			<li><a on:click={closeMenu} href="/biz">{$t('navbar.about')}</a></li>
+			<li><a on:click={closeMenu} href="/ortaklar">Ortaklar</a></li>
+			<li><a on:click={closeMenu} href="/danışmanlar">Danışmanlar</a></li>
+			<li><a on:click={closeMenu} href="/avukatlar">Avukatlar</a></li>
+			<li><a on:click={closeMenu} href="/uygulamalar">{$t('navbar.areas')}</a></li>
+			<li><a on:click={closeMenu} href="/iletişim">{$t('navbar.contact')}</a></li>
+		</ul>
+	</nav>
+</Drawer>
 
 <AppShell>
 	<!-- <div class="py-4 container mx-auto"> -->
