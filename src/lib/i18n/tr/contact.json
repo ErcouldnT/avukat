@@ -1,7 +1,7 @@
 {
 	"title": "Bize Ulaşın",
-	"common": "Danışmanlık ve detaylı bilgi için?",
-	"adres": {
+	"text": "Danışmanlık ve detaylı bilgi için?",
+	"address": {
 		"title": "Adres",
 		"info": "Cevizli Mah. Zuhal Sk. Ritim İstanbul Avm A3 Blok D:101",
 		"city": "Maltepe / İSTANBUL"
