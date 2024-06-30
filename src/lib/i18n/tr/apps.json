@@ -1,1 +1,92 @@
-{}
+{
+	"title": "Ana Uygulama Alanları",
+	"h1": "Danışmanlık",
+	"p-1": "ATLAS LEGAL, mevcut hukuki problemlerin tespitinin yanında problemin çözümü noktasında izlenebilecek yol haritasını sunmaktadır.",
+	"p-2": "Ayrıca, iş bölümüne sahip uzman personeli ile müvekkilinin faaliyet alanındaki çalışmalarının, başından sonuna kadar hukuki denetimini ve yönlendirmesini yaparak gerçekleşmesi muhtemel yasal sıkıntılardan mümkün olduğu kadar uzak bir seyirde neticelenmesine yardımcı olmaktadır.",
+	"areas": [
+		{
+			"title": "Danışmanlık",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Dava Ve Uyuşmazlık Çözümü",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Tahkim",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Ticaret ve Şirketler Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Sözleşmeler Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Tüketici Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Kişisel Verilerin Korunması Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Elektronik Ticaret Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Rekabet Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Fikri Mülkiyet ve Marka Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Gayrimenkul ve İnşaat Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Bankacılık ve Finans Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Aile Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "İcra ve İflas Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "İş Ve Sosyal Güvenlik Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Ceza Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "İdare Ve Vergi Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Sağlık Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Basın Ve Medya Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Dernekler Hukuku",
+			"url": "/uygulamalar/"
+		},
+		{
+			"title": "Enerji Hukuku",
+			"url": "/uygulamalar/"
+		}
+	]
+}

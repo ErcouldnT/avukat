@@ -2,5 +2,5 @@
 	import TitleBar from '$lib/components/TitleBar.svelte';
 </script>
 
-<TitleBar />
+<TitleBar title="Ana Uygulama Alanları" />
 <slot />
